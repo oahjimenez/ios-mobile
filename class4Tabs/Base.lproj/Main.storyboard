@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6m-vA-TDF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transferencia-->
+        <scene sceneID="BQh-R7-Kne">
+            <objects>
+                <viewController id="S5S-d0-8V8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="slW-GN-Y4d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ptu-jR-kdP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Transferencia" image="pencil.and.ellipsis.rectangle" catalog="system" id="WMc-MV-30e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVG-dB-zE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="911"/>
+        </scene>
+        <!--Bolsa-->
+        <scene sceneID="cD6-Wv-lwV">
+            <objects>
+                <viewController id="GxY-7R-HKZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hnl-TU-O2S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5S8-qS-yVr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bolsa" image="pencil.and.ellipsis.rectangle" catalog="system" id="Sdi-lu-o8U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIV-9D-IrW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="911"/>
+        </scene>
+        <!--Billeteria-->
+        <scene sceneID="c5a-Td-ntv">
+            <objects>
+                <viewController id="AA5-rg-6sG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MrJ-Xu-pDS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pTJ-2o-qdd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Billeteria" image="square.and.pencil" catalog="system" id="X16-xe-mWY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mno-IU-KhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="911"/>
+        </scene>
+        <!--Billetera-->
+        <scene sceneID="bXk-Og-y0s">
+            <objects>
+                <viewController id="vo0-Bj-JRb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4o1-Ej-Uh4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="MZ4-qR-dHU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Billetera" image="doc.append" catalog="system" id="4OM-Qb-A3a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQf-Yc-0Qx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="911"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LUO-7p-aNw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="q6m-vA-TDF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aDk-qs-1i6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GxY-7R-HKZ" kind="relationship" relationship="viewControllers" id="VP5-3B-PET"/>
+                        <segue destination="S5S-d0-8V8" kind="relationship" relationship="viewControllers" id="dwL-k8-PmV"/>
+                        <segue destination="X8h-mr-apm" kind="relationship" relationship="viewControllers" id="wST-xm-dAU"/>
+                        <segue destination="AA5-rg-6sG" kind="relationship" relationship="viewControllers" id="7Ts-8K-JNW"/>
+                        <segue destination="vo0-Bj-JRb" kind="relationship" relationship="viewControllers" id="b1R-qx-yo9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IiB-eg-Ny9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="ncX-JB-QVw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="home" id="X8h-mr-apm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dHD-Ke-jPX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="un6-P2-JmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626.08695652173913" y="910.71428571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.append" catalog="system" width="56" height="64"/>
+        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="64" height="40"/>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
+</document>

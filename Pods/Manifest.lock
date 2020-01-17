@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - CircleProgressView (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - CircleProgressView (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CircleProgressView
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  CircleProgressView: 6b5b091d59dc5e5d2fda84e637a40498cdc39937
+
+PODFILE CHECKSUM: eb7636557c12e15c57b2fe379e4883e4a80406d3
+
+COCOAPODS: 1.8.4

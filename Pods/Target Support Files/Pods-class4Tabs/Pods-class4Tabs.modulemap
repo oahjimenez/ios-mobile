@@ -1,0 +1,6 @@
+framework module Pods_class4Tabs {
+  umbrella header "Pods-class4Tabs-umbrella.h"
+
+  export *
+  module * { export * }
+}
