@@ -60,5 +60,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Necesitamos acceder a la tu Ubicacion para mostrar las sucursales mas cercanas</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Necesitamos validar su identidad</string>
 </dict>
 </plist>

@@ -17,6 +17,27 @@ class HomeViewController: UIViewController {
         button.shadow(shadowColorPorcent: 0.3)
 
         // Do any additional setup after loading the view.
+        LocationService.shared.permission { (status) in
+            if !status {
+                LocationService.shared.manager.requestWhenInUseAuthorization()
+            }
+        }
+        if UserDefaults.standard.bool(forKey: "Logged"){
+            print("Login exitoso")
+        } else {
+            BiometricsService.shared.access(text: "Transferir", completion: { (access) in
+                print("Transferir access:",access)
+                if access {
+                    UserDefaults.standard.set(true,forKey: "Logged")
+                } else {
+                    let alert = UIAlertController(title: "Usuario no identificado", message : "Lo sentimos no logramos validar tu identidad, intenta nuevamente",preferredStyle: .actionSheet)
+                    alert.addAction(UIAlertAction(title:"OK",style: .default,handler:nil))
+                    DispatchQueue.main.async {
+                        self.present(alert,animated:true,completion:nil)
+                    }
+                }
+            })
+        }
     }
     
 
