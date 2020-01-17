@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class Servicios {
-    private static let _shared = Servicios()
-    static var shared : Servicios {
+class Services {
+    private static let _shared = Services()
+    static var shared : Services {
         return _shared
     }
     

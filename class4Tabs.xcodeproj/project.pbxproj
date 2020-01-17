@@ -15,7 +15,7 @@
 		A7628CD323D08DE8004AC4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7628CD223D08DE8004AC4EE /* Assets.xcassets */; };
 		A7628CD623D08DE8004AC4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7628CD423D08DE8004AC4EE /* LaunchScreen.storyboard */; };
 		A7628CDE23D0C950004AC4EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7628CDD23D0C950004AC4EE /* HomeViewController.swift */; };
-		A7F2DA7723D1E00700628DAE /* Servicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2DA7623D1E00700628DAE /* Servicios.swift */; };
+		A7F2DA7723D1E00700628DAE /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2DA7623D1E00700628DAE /* Services.swift */; };
 		A7F2DA7923D1E32200628DAE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2DA7823D1E32200628DAE /* LocationService.swift */; };
 		A7F2DA7D23D1E55700628DAE /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F2DA7B23D1E55700628DAE /* home.storyboard */; };
 		BE5A04709E2BBDCAA338097E /* Pods_class4Tabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F0CA8E04BE4E8F927C2964 /* Pods_class4Tabs.framework */; };
@@ -35,7 +35,7 @@
 		A7628CD523D08DE8004AC4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7628CD723D08DE8004AC4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7628CDD23D0C950004AC4EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A7F2DA7623D1E00700628DAE /* Servicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicios.swift; sourceTree = "<group>"; };
+		A7F2DA7623D1E00700628DAE /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		A7F2DA7823D1E32200628DAE /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A7F2DA7C23D1E55700628DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = class4Tabs/Base.lproj/home.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -82,12 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				A7628CC623D08DE5004AC4EE /* AppDelegate.swift */,
+				A7F2DA7E23D1EA8000628DAE /* C0000-Services */,
 				A7F2DA7A23D1E53400628DAE /* C01-Home */,
 				A7628CC823D08DE5004AC4EE /* SceneDelegate.swift */,
 				A7628CCA23D08DE5004AC4EE /* ViewController.swift */,
 				A7628CCC23D08DE5004AC4EE /* Main.storyboard */,
-				A7F2DA7623D1E00700628DAE /* Servicios.swift */,
-				A7F2DA7823D1E32200628DAE /* LocationService.swift */,
 				A7628CD223D08DE8004AC4EE /* Assets.xcassets */,
 				A7628CD423D08DE8004AC4EE /* LaunchScreen.storyboard */,
 				A7628CD723D08DE8004AC4EE /* Info.plist */,
@@ -103,6 +102,15 @@
 				A7F2DA7B23D1E55700628DAE /* home.storyboard */,
 			);
 			path = "C01-Home";
+			sourceTree = "<group>";
+		};
+		A7F2DA7E23D1EA8000628DAE /* C0000-Services */ = {
+			isa = PBXGroup;
+			children = (
+				A7F2DA7623D1E00700628DAE /* Services.swift */,
+				A7F2DA7823D1E32200628DAE /* LocationService.swift */,
+			);
+			path = "C0000-Services";
 			sourceTree = "<group>";
 		};
 		B4F3493346A208D56FD3604C /* Pods */ = {
@@ -234,7 +242,7 @@
 				A7628CDE23D0C950004AC4EE /* HomeViewController.swift in Sources */,
 				A7628CCB23D08DE5004AC4EE /* ViewController.swift in Sources */,
 				A7628CC723D08DE5004AC4EE /* AppDelegate.swift in Sources */,
-				A7F2DA7723D1E00700628DAE /* Servicios.swift in Sources */,
+				A7F2DA7723D1E00700628DAE /* Services.swift in Sources */,
 				A7628CC923D08DE5004AC4EE /* SceneDelegate.swift in Sources */,
 				A7628CD123D08DE5004AC4EE /* class4Tabs.xcdatamodeld in Sources */,
 			);
