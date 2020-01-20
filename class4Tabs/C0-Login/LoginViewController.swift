@@ -23,8 +23,16 @@ class LoginViewController: UIViewController {
                 sendAlert("Log in error", "Por favor ingrese su usuario y contreaseña","Ok")
                 return
             }
-            sendAlert("Bienvenido, \(username)", "Has ingresado satisfactoriamente","Ok")
-            self.performSegue(withIdentifier: "logintohome", sender: self)
+            
+            AuthentificationService.shared.authenticate(username:username,password:password,completion: {(isAuthenticated) in
+                if isAuthenticated {
+                    self.sendAlert("Bienvenido, \(username)", "Has ingresado satisfactoriamente","Ok")
+                    self.performSegue(withIdentifier: "logintohome", sender: self)
+                } else {
+                    self.sendAlert("Error de autenticacion", "Usuario o contraseña incorretos","Ok")
+                }
+                
+            })
         }
         
 

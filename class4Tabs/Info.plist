@@ -64,5 +64,10 @@
 	<string>Necesitamos acceder a la tu Ubicacion para mostrar las sucursales mas cercanas</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Necesitamos validar su identidad</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
