@@ -56,5 +56,16 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    /*
+     Ejemplo sobre como compartir informacion entre distintos viewController, utilizando bus de eventos
+     */
+    @objc func touch() {
+    NotificationCenter.default.post(name:NSNotification.Name(rawValue:"ok"), object: nil)
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "", sender: self)
+        }
+    }
 
 }

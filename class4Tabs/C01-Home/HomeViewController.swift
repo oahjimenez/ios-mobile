@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     let button = UIButton()
 
     override func viewDidLoad() {
+        NotificationCenter.default.addObserver(self, selector: #selector(color), name: NSNotification.Name(rawValue:"ok"), object: nil)
         super.viewDidLoad()
         button.shadow(shadowColorPorcent: 0.3)
 
@@ -40,6 +41,10 @@ class HomeViewController: UIViewController {
         }
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
+    }
 
     /*
     // MARK: - Navigation
@@ -50,5 +55,11 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @objc func color(){
+        DispatchQueue.main.async {
+            self.view.backgroundColor = .red
+        }
+    }
 
 }
