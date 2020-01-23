@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CreditCard" representedClassName=".CreditCard" syncable="YES">
+        <attribute name="cvc" optional="YES" attributeType="String"/>
+        <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="number" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="persons" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="creditCards" inverseEntity="Person"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="number"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Person" representedClassName=".Person" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rut" optional="YES" attributeType="String"/>
+        <relationship name="creditCards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CreditCard" inverseName="persons" inverseEntity="CreditCard"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="rut"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="CreditCard" positionX="-54" positionY="-9" width="128" height="118"/>
+    </elements>
+</model>
